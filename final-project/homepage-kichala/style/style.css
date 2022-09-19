@@ -1,0 +1,207 @@
+/* Global Rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.nav > ul{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex--wrap {
+    flex-wrap: wrap
+}
+
+.flex--center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex--middle{
+    justify-content: space-between;
+}
+
+.x--wide{
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xp--1{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.emerald{
+    background-color: #2ecc71;
+    color: white;
+}
+.navbar{
+    min-height: 80px;
+}
+
+.navbar > .wrapper{
+    min-height: inherit;
+}
+
+.flex .flex--between{
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: white;
+}
+
+.logo > img{
+    height: 70px;
+}
+
+.menu__item{
+    margin-top: 1.5em;
+    margin-left: 2em;
+    text-transform: uppercase;
+}
+
+.hero{
+    min-height: calc(100vh - 80px);
+    background: url(../img/family-photography.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.hero__overlay{
+    /* padding-top: 23em; */
+    /* padding-left: 25em; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: inherit;
+}
+
+.hero__content{
+    text-align: center;
+    color: white;
+}
+
+.hero__heading{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero__subheading{
+    font-size: 24px;
+}
+
+.section{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.section__heading{
+    text-align: center;
+    font-size: 60px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+}
+.section__img{
+    padding-top: 1em;
+}
+
+/* .row{
+
+} */
+
+.column{
+    flex: 1 1 370px;
+    /* padding-top: 5px; */
+    /* padding-left: 225px; */
+    /* padding-right: 1px; */
+    margin-bottom: 1em;
+}
+
+/* We simplified the code here... */
+.column > img {
+    height: 100%;
+    object-fit: cover;
+    /* Just add those declarations here... */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.column > img:hover {
+    opacity: 0.7;
+}
+
+/* To get complicated here? To write the same 
+thing over and over? */
+/* .myimg1{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myimg1:hover{
+    opacity: 0.7;
+}
+
+.myimg2{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myimg2:hover{
+    opacity: 0.7;
+}
+
+.myimg3{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myimg3:hover{
+    opacity: 0.7;
+}
+
+
+.myimg{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myimg:hover{
+    opacity: 0.7;
+} */
+
+
+/* 
+
+Nothing technically wrong, but this is way too much code. What you should 
+be trying to do is to get the maximum result with as little code as possible.
+
+Overall, this is good work.
+
+15/15
+
+100%
+
+*/

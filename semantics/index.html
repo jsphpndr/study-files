@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML</title>
+  <meta name="description" content="">
+  <link rel="canonical" href="https://semantichtml.com">
+</head>
+<body>
+  
+  <!-- Navbar — START -->
+  <!-- The <header> element here is used to provide additional information, but the relationship
+    is not necessarily related to the content of the page, but the entire website or all
+    webpages on our site. This element will generally be repeated on all pages.
+  
+  
+    The page header most often provides site navigation and is consistently applied accross all
+    pages with little variation. -->
+  <header><!-- Parent -->
+    
+    <!-- When creating a website, a home button or link to our homepage is always necessary. This 
+    link acts this way in our <header> -->
+    <a href="/">Joseph Pinder</a><!-- Child | Sibling -->
+    
+    <!-- The <nav> element is a semantic element. It stands for navigation.
+      
+        Best practice when structuring a <nav> element is to have a <ul> child element and 
+        links inside of list items. -->
+    <nav><!-- Child | Sibling | Parent -->
+      <ul><!-- Grandchild | Child | Parent -->
+        <li><a href="#">About Me</a></li><!-- Child | Sibling | Parent | Grandchild | Great Grandchild -->
+        <li><a href="#">What I Do</a></li><!-- Child | Sibling | Parent | Grandchild | Great Grandchild -->
+        <li><a href="#">Contact Me</a></li><!-- Child | Sibling | Parent | Grandchild | Great Grandchild -->
+      </ul>
+    </nav>
+
+  </header>
+  <!-- Navbar - END -->
+
+  <!-- The <main> element identifies the main content of our page. It should only be used once
+      and it should not be the child of any other semantic element. It can be the child of the 
+      <div> element. -->
+  <main>
+
+    <!-- The <header> element, just like in any other document, provides the main heading and
+      sometimes offers a summary, for the present page or element. -->
+    <header>
+
+      <h1>Joseph Pinder</h1>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur illum, eaque velit molestias veniam, ipsa at labore distinctio, qui nam quam voluptatum quibusdam harum?</p>
+
+    </header>
+
+    <!-- Article — START -->
+    <!-- The <article> element is for longer bits of content on our website, like an article or post 
+        or story or some other long narrative or content. This element requires at least one 
+        heading. -->
+    <article>
+      <h2>Article</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nemo ad odio quo impedit harum, in neque eligendi aperiam laborum ducimus repudiandae nam suscipit alias!</p>
+      <p>Reiciendis magnam dolorum rerum vel eligendi nisi natus dolor non, soluta veritatis fugit iure facilis perspiciatis ex voluptatem nam doloremque ipsa in officia amet! Amet.</p>
+      <p>Nobis vel facilis sit consequatur voluptates consectetur, commodi modi mollitia fuga aliquam voluptatibus. Debitis accusantium autem commodi dolore libero obcaecati ullam sed, nihil minus placeat!</p>
+      <p>Illum eligendi voluptatem unde, minus quos necessitatibus! Cumque, ab explicabo incidunt mollitia minima molestias vel numquam ullam id sequi provident? Tenetur quisquam ullam earum quas!</p>
+      <p>Temporibus dolorem vel ex pariatur? Autem iste quas vero beatae quis deleniti, placeat explicabo, modi itaque animi, hic consectetur? Maiores aliquid facilis hic amet ipsam!</p>
+    </article>
+    <!-- Article — END -->
+
+    <!-- Section — START -->
+    <!-- The <section> element is for shorter bits of related content. This element 
+      requires at least one heading. -->
+    <section>
+      <h2>Section</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum eos quo cupiditate rerum et labore, architecto omnis veritatis alias magnam aut totam temporibus ratione?</p>
+      <p>Repellendus beatae distinctio fugit cum reiciendis consectetur quisquam laborum quia eos, incidunt dolorum totam maiores. Accusantium quo aliquam eum corrupti modi voluptate nisi aut nihil.</p>
+    </section>
+    <!-- Section — END -->
+
+    <!-- Aside - START -->
+    <!-- The <aside> element is for content unrelated to our page's main subject. This element 
+      requires at least one heading. -->
+    <aside>
+
+      <h3>Aside</h3>
+
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, eius, tempore ut facere aperiam molestiae ab, numquam magni iure perspiciatis eos nisi quae fugiat neque.</p>
+
+      <ul>
+        <li><a href="#">Another Page</a></li>
+        <li><a href="#">Another Page</a></li>
+        <li><a href="#">Another Page</a></li>
+      </ul>
+
+    </aside>
+    <!-- Aside - END -->
+
+    <!-- Footer — START -->
+    <!-- The <footer> element, just like in any other document, serves as a place for additional
+      information related to the content of its particular parent element. -->
+    <footer>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, repellendus.</p>
+      <p>Ipsum quos nesciunt suscipit officia saepe modi? Quis, dignissimos delectus?</p>
+
+    </footer>
+    <!-- Footer — END -->
+
+  </main>
+
+  <!-- Footer — START -->
+  <!-- The <footer> element here is used to provide additional information, but the relationship
+    is not necessarily related to the content of the page, but the entire website or all
+    webpages on our site. This element will generally be repeated on all pages. -->
+  <footer>
+
+    <small>&copy; 2021 Joseph Pinder</small>
+
+  </footer>
+  <!-- Footer — END -->
+
+</body>
+</html>

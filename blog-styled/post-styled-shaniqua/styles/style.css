@@ -1,0 +1,139 @@
+
+/* GLOBAL STYLE - START */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana;
+}
+
+/* UTILITY - START */
+
+.flex {
+    display: flex;
+}
+
+.flex--middle {
+    display: flex;
+    align-items: center;
+}
+
+.x--wide{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.y--height{
+    min-height: 100vh;
+}
+
+.bg--prime {
+    background-color:black;
+}
+
+.bg--sec {
+    background-color: lawngreen;
+}
+
+/* UTILITY END */
+
+/* GLOBAL STYLE START */
+
+/* NAVBAR - START */
+
+.navbar{
+    height: 100px;
+}
+
+.king{
+    height: inherit;
+}
+
+.logo {
+    height: inherit;
+}
+
+.logo img{
+    width: 90px;
+}
+
+.navbar .king{
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    color: black;
+    margin-left: 1em;
+
+}
+
+.menu__link{
+    text-decoration: none;
+    color: white;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+/* NAVBAR END */
+
+/* HOME START */
+
+/* ACE START */
+
+.ace {
+    background-color: black;
+    background: url("https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg") no-repeat center;
+    background-size: cover;
+    min-height: calc(100vh - 100px);
+    color: white;
+}
+
+.ace .king{
+    min-height: inherit
+}
+
+.ace__heading {
+    font-size: 5em;
+}
+
+.ace__subheading{
+    font-size: 1.5em;
+}
+
+/* ACE - END */
+
+/* HOME START */
+
+.queen {
+    text-decoration-color: white;
+}
+
+/* SECTIONS END */
+
+/* FOOTER START */
+
+.footer__link{
+    text-decoration: none;
+    color: white;
+}
+/* FOOTER END */
+
+/* 
+
+So, this is unique. Definitely bright.
+
+Well, indented, simple. I like that I can see your own ideas in this.
+
+Not a blog post, but at this point, I'll take it.
+
+15/15
+
+100%
+
+*/

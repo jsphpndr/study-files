@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Forgot the <html> element. This container is always required as a container for
+    all elements of our page.  -->
+<html lang="en">
+    <!-- The <head> and the <body> element should be inside of the <html> element. The <head>
+        is for the invisible content. -->
+    <head>
+        <!-- Need charset. -->
+        <meta charset="UTF-8">
+        <!-- Need viewport. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Need title. -->
+        <title>Tables - Nowe</title>
+        <!-- Need description. -->
+        <meta name="description" content="This is my tables project.">
+        <!-- Need canonical. This will be required with the domain you selected for
+        the course when graded. -->
+        <link rel="canonical" href="https://noweharrissmith.com">
+
+        <!-- We'll learn about internal styles when we get to CSS, while they can 
+            go in the body, best practice is — generally — to put them in the <head> 
+            element. -->
+        <style>
+            table,th,td{
+                border:1px solid #000;
+                border-collapse: collapse;
+                }
+                
+            th,td{padding:10px;}
+        </style>
+
+    </head>
+    <!-- The <body> is for all the visible content of our document. Nothing that's on the page
+    should be outside of the <body> element. -->
+    <body>
+        
+        <!-- Since the document doesn't have a heading, the first heading should be the
+        <h1> heading. -->
+        <h1>Junior High Art Supply Orders</h1>
+        
+        <table>
+            <tr>
+                <!-- Good using the element as a spacer. -->
+                <th></th>
+                <th scope="col">Crayola Pencils</th>
+                <th scope="col">Derwent Charcoal</th>
+            </tr>
+            <!-- This closing tag wasn't attached to anything. ??? -->
+            <!-- </tr> -->
+            <tr>
+                <th scope="row">Year 2019:</th>
+                <td>76 boxes</td>
+                <td>89 boxes</td>
+            </tr>
+            <tr>
+                <th scope="row">Year 2020:</th>
+                <td>56 boxes</td>
+                <td>68 boxes</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
+
+<!-- The general concept of creating elements is understood, but you need to remember the 
+    basics in terms of the barebones minimum — <html>, <head>, <body> — and what goes where. -->

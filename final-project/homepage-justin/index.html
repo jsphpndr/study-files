@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- This is not needed? -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Boyz</title>
+    <!-- Why is the content attribute empty? -->
+    <meta name="description" content="This is where you tell users and search engines what this site is about?">
+    <link rel="canonical" href="https://www.justinwilliams.com">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <!-- Classes are not case sensitive. Why are we not following naming conventions? -->
+    <header class="navbar ElectronBlue">
+        <div class="wrapper x--wide xp--1 flex flex--between flex--middle">
+        
+            <a class="logo flex--middle " href="/">
+                <!-- I know that I'm not looking at a filename with spaces in it? -->
+                <img src="img/Islandboyz logo.png" alt="Islandboyz">
+            </a>
+
+            <nav class="nav">
+                <ul class="menu flex">
+                    <li class="menu__item"><a href="" class="menu_link">Home</a></li>
+                    <li class="menu__item"><a href="" class="menu_link">What's New</a></li>
+                    <li class="menu__item"><a href="" class="menu_link">Get In Touch</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main id="main" class="main">
+        <header class="hero">
+            <div class="hero__overlay flex--middle flex flex--center">
+
+                <div class="hero__content ">
+                    <h1 class="hero__heading">Island Boyz</h1>
+                    <div class="line"></div>
+                    <p class="hero__subheading">All Things Bahamian</p>
+                </div>
+
+            </div>
+
+    </header>
+
+    <!-- What is it with the need for caps? And why no space between the attributes? -->
+    <section id="Who-we-are"class="section">
+        <!-- This is broken. -->
+        <!-- <div class="wrapper x--wide xp--1 col"> -->
+            <h2 class="section__heading">Who We Are</h2>
+            
+            <div class="section__body  flex--wrap flex  col ">
+
+                <div class="section__img  col">
+
+                    <img src="img/BHS-Junkanoo-Festival-Woman.jpg" alt="bahamas-junkanoo-festival-1">
+
+                </div>
+
+        </div>
+        
+        
+        <div class="section__content col">
+            <h3 class="section__subheading">All Things Bahamian</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea porro natus molestias, quos corrupti in blanditiis magnam perferendis ad, dignissimos cumque eligendi. Dolorem, quia officia aperiam totam provident facilis magni.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum temporibus voluptates, soluta nisi expedita est repudiandae itaque vero praesentium. Eaque quod velit tempora. Magni ea molestiae earum! Quos, odit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, quo animi! Quibusdam, vitae maxime fugiat distinctio perspiciatis ad nisi voluptatum laborum pariatur unde quidem illo perferendis magnam quasi quas esse.</p>
+        </div>
+
+    </section>
+
+        
+        
+    <!-- This was breaking your code. It's supposed to close your .wrapper in #who-we-are, but it's outside of the <section> element. -->
+    <!-- </div> -->
+    <!-- Naming conventions? There are no spaces in ID's. What happened to all lowercase, dashes instead of spaces? -->
+    <section id="Popular Foods And Beverages" class="section ElectronBlue ">
+
+        <h2 class="section__heading">Popular Foods And Beverages</h2>
+        
+        <ul class="section__body col cards flex flex--wrap ElectronBlue">
+
+            <li class="card">
+                <h3 class="card heading">Guava Duff</h3>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+                <figure class="card--thumb">
+                 
+                    <img src="img/Guava-Duff.png" alt="Guava-Duff">
+                </figure>
+            </li>
+
+        <li class="card">
+            <h3 class="card heading">Conch Fritters</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+            <figure class="card--thumb">
+             
+                <img src="img/Conch-Fritters.jpg" alt="Conch-Fritters">
+            </figure>
+        </li>
+
+        <li class="card">
+            <h3 class="card heading">Conch Salad</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+            <figure class="card--thumb">
+             
+                <img src="img/Conch-Salad.jpg" alt="Conch-Salad">
+            </figure>
+        </li>
+
+        <li class="card">
+            <h3 class="card heading">Sky Juice</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+            <figure class="card--thumb">
+             
+                <img src="img/0fc366_0536b9c2119f4df59bf005f3a1517321_mv2.jpg" alt="Sky Juice">
+            </figure>
+        </li>
+
+        <li class="card">
+            <h3 class="card heading">Bahama Mama</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+            <figure class="card--thumb">
+                <!-- Man, ya' killing me. -->
+                <img src="img/Bahama Mama.jpg" alt="Bahama mama">
+            </figure>
+        </li>
+     </ul>
+     </section>
+
+     <section id="Fashion" class="section ElectronBlue col">
+
+        <h2 class="section__heading">Fashion</h2>
+        
+        <ul class="section__body cards flex flex--wrap ElectronBlue">
+
+        <li class="card">
+            <h3 class="card heading">Bahari T'shirt</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+            <figure class="card--thumb">
+             
+                <img src="img/baharifall16-1.jpg" alt="Bahari Tee">
+            </figure>
+        </li>
+
+        <li class="card">
+            <h3 class="card heading">Archipelago T'shirt</h3>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nesciunt temporibus voluptas natus illo eveniet quasi! Quia aliquam obcaecati ipsa animi eos numquam quae modi!</p>
+            <figure class="card--thumb">
+             
+                <img src="img/BIG_ARCHIPELAGOES.jpg" alt="ARCHIPELAGO Tee">
+            </figure>
+        </li>
+
+     </ul>
+     </section>
+
+     <section id="get-in-touch" class="section ">
+         <div class="wrapper x--wide xp--1">
+             <div class="section__content">
+                 <h2 class="section__heading">Get In Touch</h2>
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod laboriosam quisquam ratione voluptatem quibusdam, delectus, nostrum suscipit atque reprehenderit ducimus porro iusto maiores quae assumenda.</p>
+                 <a href="" class="btn"></a>
+             </div>
+         </div>
+     </section>
+    
+    </main>
+
+    <footer class="footer flex--center flex--middle ElectronBlue">
+        <small>&copy;2021 Islandboyz.All rigthts reserved.</small>
+
+    </footer>
+    
+</body>
+</html>
+
+
+<!-- 
+
+    Empty content attribute: -1/2
+    Naming conventions: -3
+    Broken tags: -1
+
+    10.5/15
+
+    70%
+
+ -->

@@ -1,0 +1,223 @@
+/* GLOBAL STYLE - START */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* UTILITY - START */
+
+.flex {
+    display: flex;
+}
+
+.flex--middle {
+    display: flex;
+    align-items: center;
+}
+
+.flex--wrap{
+    flex-wrap: wrap;
+}
+
+.x--wide{
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.y--height{
+    min-height: 100vh;
+}
+
+.bg--prime {
+    background-color:black;
+}
+
+.bg--sec {
+    background-color: lawngreen;
+}
+
+/* UTILITY END */
+
+/* GLOBAL STYLE START */
+
+/* NAVBAR - START */
+
+.navbar{
+    height: 100px;
+}
+
+.wrapper{
+    height: inherit;
+}
+
+.logo {
+    height: inherit;
+}
+
+.logo img{
+    width: 90px;
+}
+
+.navbar .wrapper{
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    color: black;
+    margin-left: 1em;
+
+}
+
+.menu__link{
+    text-decoration: none;
+    color: white;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+/* NAVBAR END */
+
+
+/* HERO START */
+
+.hero {
+    background-color: black;
+    background: url("https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_960_720.jpg") no-repeat center;
+    background-size: cover;
+    min-height: calc(100vh - 100px);
+    color: white;
+}
+
+.hero .wrapper{
+    min-height: inherit
+}
+
+.hero__heading {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero__subheading{
+    font-size: 24px;
+}
+
+
+.line{
+    background-color: white;
+    height: 4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.hero__content{
+    text-align: center;
+    text-transform: unset;
+}
+
+.text {
+    color: black;
+    outline-width: medium;
+    outline-color:  lawngreen;
+}
+
+/* HERO - END */
+
+/* SECTION START */
+
+.xp--1{
+    padding-left: 1em;
+}
+
+.section{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.section__heading{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 1em;
+}
+
+.col{
+    flex: 1 1 1152px;
+    margin-bottom: 1em;
+}
+
+
+/* CARD START */
+
+.cards{
+    list-style: none;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc((1080px / 3) - 60px );
+}
+
+.card{
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.card__heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 2em;
+}
+
+.card__text{
+    padding: 5em;
+    flex-wrap: wrap;
+}
+
+.card__thumb{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+/* CARD END */
+
+/* SECTIONS END */
+
+/* FOOTER START */
+
+.footer__link{
+    text-decoration: none;
+    color: white;
+}
+/* FOOTER END */
+
+
+
+/* 
+
+So, there's nothing technically wrong with this. This is Fish Company given 
+back to me with some customizations.
+
+When I give this assignment out, I like to see more of the student's thinking 
+in terms of code. While you were able to customize it in some ways, there's 
+still a need to understand the fundamentals.
+
+15/15
+
+100%
+
+*/

@@ -1,0 +1,215 @@
+*{
+margin: 0;
+padding:0 ;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+scroll-behavior: smooth;
+}
+
+/* Scroll Behaviour would usually go here. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* body{
+min-height: 1000px;
+} */
+
+/* font-family on the body */
+body{
+    min-height: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+p{
+    /* This is note a proper declaration. It's font-weight. */
+    /* font: weight 300px; */
+    font-weight: 300px;
+    color: rgb(2, 17, 17);
+}
+
+
+.banner{
+    /* Why position relative? */
+    position: relative;
+    width: 1600px;
+    min-height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Would have preferred it to be stored locally. */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSExy_Pq5In9RLdgVrssw_29B7bFlOzfcyGQ&usqp=CAU);
+    background-size: cover;
+}
+
+/* A better name for your content element would have worked here. */
+/* .banner .content{
+    max-width: 900px;
+    text-align:center ;
+} */
+
+.banner__content{
+    max-width: 900px;
+    text-align:center ;
+}
+
+/* You could have just as well added a class to your h2 tag. */
+/* .banner .content h2{
+    font-size: 5em;
+    color: rgba(233, 12, 12, 0.733);
+
+} */
+
+/* Less code. Less specificity. Easier to change. */
+.h2 {
+    font-size: 5em;
+    color: rgba(233, 12, 12, 0.733); 
+}
+
+.banner.content p{
+    font-size: 1em;
+    color: #ff0101;
+}
+
+.btn{
+    font-size: 1em;
+    color: blanchedalmond;
+    background: blueviolet;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+letter-spacing:6px;
+}
+
+header{
+ position: fixed;
+ top: 0;
+ left:0;
+ width: 100%; 
+ padding:40px 100px;
+ z-index:10000; 
+ display: flex;
+  justify-content:space-between;
+  align-items: center;
+  transition:0.5s;
+
+}
+
+
+/* THis is way too much. Just give the items a class. */
+header .sticky{
+    background: gold;
+    padding: 40px 100px;
+    /* Umm... rgba only works with four values, not five. */
+    /* box-shadow: 0px 5px 20px rgba(0,0,0,0,.05); */
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+
+header .logo{
+color:rgb(0, 26, 255) ;
+font-weight: 700;
+font-size: 2em;
+text-decoration: none;
+}
+
+header .sticky.logo{
+color: rgb(8, 23, 240);
+}
+
+
+header .logo span{
+    color: rgb(130, 182, 9); 
+}
+
+/* Indentation is really inconsistent in this document. */
+header .navigation{
+ position: relative; 
+ display: flex;  
+}
+
+header .navigation li{
+list-style: none;
+margin-left: 30px;
+}
+
+header .navigation li a{
+text-decoration: none;
+color: rgb(24, 0, 243);
+font-weight: bold; 
+
+}
+
+header .sticky .navigation li a{
+color:rgb(176, 204, 15);
+}
+
+header .navigation li a:hover{
+    color:#ff0157 ;
+}
+
+section{
+  padding:100px;  
+}
+
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.row .col50{
+   position:relative;
+   width: 48%;
+}
+
+.titletext{
+    color:#111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titletext span{
+    color:#ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgbx{
+  position: relative;
+  width:100%;
+  min-height: 400px;
+}
+
+.row .col50 .backdrop img{
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%; 
+ height:100%;
+ object-fit:cover;
+
+}
+
+/* 
+
+I like the attempt, but this was way too much code for the result that you got.
+The idea isn't to write as much code as you can, but the least amount with the 
+most effective results.
+
+Indentation: -1
+Errors: -1
+Not sending this project in a folder: -1
+
+12/15
+
+80%
+
+*/

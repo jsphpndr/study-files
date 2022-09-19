@@ -1,0 +1,166 @@
+/* The User Agent Stylesheet is
+the browser's default styles for
+HTML elements. */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* The box-sizing: border-box declaration,
+  tells the browser to adjust the content 
+  inside of the element versus adding to an 
+  element's width and height. */
+  box-sizing: border-box;
+}
+
+div {
+  background-color: blue;
+}
+
+/* 
+
+ID's are unique identifiers.
+
+These unique identifiers take precendence 
+above class selectors regardless of their 
+order in our stylesheet.
+
+ID's should be used sparingly and should be 
+UNIQUE, meaning each ID name should only be
+used once per element per page.
+
+ID's are case-sensitive, meaning that just as 
+they are written they are read.
+
+i.e. thePinkBox and thepinkbox are not 
+the same.
+
+*/
+#thePinkBox {
+  background-color: green;
+}
+
+/* In CSS we can use HTML attributes
+as selectors in our stylesheet.
+Primarily, ID's and classes.
+
+To select a class, a period is used 
+before the class name.
+
+Classes allow us to select multiple 
+elements at once.
+
+Whereas a tag selector will select 
+all elements of the same tagname, 
+classes allows us to identify and 
+specify one element or more.
+*/
+.pink {
+  background-color: pink;
+}
+
+.box-margin {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.box-width {
+  width: 50%;
+  height: 50%;
+}
+
+.box-500 {
+  width: 500px;
+  /* height: 200px; */
+  /* Padding adjusts white space inside of 
+  our elements.
+  
+  By default, it adds to our element's fixed 
+  width and height.
+  
+  This behavior is not preferred.
+  
+  ---
+
+  The browser reads the viewport: top, right,
+  bottom, left.
+
+  Certain CSS properties are applied in this 
+  fashion: i.e padding.
+
+  However, there are shorcuts that allow us 
+  to write less code to the same effect.
+
+  The following is the long method:
+  */
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /* 
+  We can write the property padding and 
+  then state the values for top, right,
+  bottom, left.
+  
+  This is the shorter method: */
+  padding: 20px 20px 20px 20px;
+  /* An even shorter method may be used
+  if top and bottom, right and left share
+  the same value. */
+  padding: 20px 20px;
+  /* And yet if all values for top, right,
+  bottom and left are the same, we can use
+  the shortest method. */
+  padding: 20px;
+  /* 
+  Margins affect the space outside of the 
+  element.
+
+  In the same fashion that the browser reads 
+  the viewport, so is the margin applied: top,
+  right, bottom, left.
+   */
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  /* As with padding, margin also has a
+  shortcode.
+  
+  This is a  shorter form:
+  */
+  margin: 20px 20px 20px 20px;
+  /* If the top and bottom, left and right 
+  values are the same, we can write the
+  following: */
+  margin: 20px 20px;
+  /* If all values (top, right, bottom, left)
+  are the same, we can the shortest method: */
+  margin: 20px;
+
+}
+
+/* The display property allows us to change 
+the default behaviour of block and inline 
+elements.
+
+The default behaviour of the flex display 
+is to position all elements equally in a
+row.
+
+The default direction being a row, flex can 
+also be applied in a column direction.
+
+*/
+.flex {
+  display: flex;
+  width: 1024px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+
+.col {
+  padding: 0 20px;
+}

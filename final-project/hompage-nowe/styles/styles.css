@@ -1,0 +1,123 @@
+/* Global Styles START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    /* Probably would have worked to add some spacing between lines. */
+    line-height: 1.5;
+}
+
+/* Same for headings... */
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.15;
+    padding-bottom: 0.25em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--middle {
+    display: flex;
+    align-items: center;
+}
+
+.x--wide {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Not everything needed to be 100vh, either. */
+.y--height {
+    /* min-height: 100vh; */
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.bg--prime {
+    background-color:rgb(255, 172, 230)
+}
+/* Global Styles END */
+
+/* Navbar START */
+.navbar {
+    height: 100px;
+}
+
+.wrapper {
+    height: inherit;
+}
+
+.logo {
+    height: inherit;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    color: black;
+    margin-left: 1em;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+/* Navbar END */
+
+/* Hero START */
+.hero {
+    background-color: white;
+    background: url(https://images.unsplash.com/photo-1549834146-0702b38f1bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+    color: black;
+}
+
+.hero .wrapper {
+    min-height: inherit;
+}
+
+.hero__heading {
+    font-size: 5em;
+}
+
+.hero__subheading {
+    font-size: 1.5em;
+}
+/* Hero END */
+
+/* 
+
+I gotta stop making Fish Company a part of my class or find a better way 
+to explain your own ideas.
+
+I like that I can see you reflected in this, but at the end of the day, to 
+build your own vision, you'll have to get those fundamentals.
+
+15/15
+
+100%
+
+*/

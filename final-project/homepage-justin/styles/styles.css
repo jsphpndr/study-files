@@ -1,0 +1,198 @@
+/* Gobal Rules */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+nav > ul{
+    list-style: none;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex--center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex--middle{
+    align-items: center;
+}
+
+.flex--between{
+    justify-content: space-between;
+}
+
+.flex--wrap{
+    flex-wrap: wrap;
+}
+
+.x--wide{
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xp--1{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.ElectronBlue{
+    background-color:#0984e3 ;
+    color: white;
+}
+
+.ElectronBlue a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 80px;
+}
+
+.nav > wrapper{
+    min-height: inherit;
+}
+
+.logo{
+    justify-content: space-between;
+}
+
+.logo >  img{
+    width: 70px;
+    height: 70px;
+}
+
+.menu__item{
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+.hero{
+    min-height: calc(100vh - 80px) ;
+    background: url(../img/conch-fritters-and-conch-salad-with-punch.jpg) no-repeat center;
+    background-size:cover ;
+}
+
+.hero__overlay{
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    min-height: inherit;
+    
+
+}
+
+.hero__content{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__heading{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero__subheading{
+    font-size: 24px;
+}
+
+.line{
+    background-color: white;
+    height: 4px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.section{
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
+}
+
+.section__heading{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 1em;
+    
+}
+
+.col{ 
+  /* The flex-grow property tells the child  *
+  element, you can get as big as your parent 
+  but no bigger.
+ */
+    flex-grow: 0;
+ /* The flex-shrink property tells the child 
+  element, you can get as small as your parent 
+  but no smaller.
+ */
+    flex-shrink: 1;
+/* 
+  The flex-basis property tells the child 
+  element, if there's enough space I want you to 
+  take this value(i.e. 250px)
+ */
+    flex-basis: 576px;
+/*
+ Instead of writing these three declarations, 
+ we can use a shortcut.
+ */
+    flex: 1 1 576px;
+    margin-bottom: 2em;
+}
+
+.section__img > img{
+   max-width: 750px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.cards{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    
+}
+
+.card--thumb {
+    padding-bottom: 3em;
+    padding-top: 3em;
+}
+
+
+/* 
+
+So, this is technically correct, but it's Fish Company. I wanted to see more
+of your thinking.
+
+While there's some changes, in order to get the results you want, you need to 
+deepen your understanding of the fundamentals.
+
+15/15
+
+100%
+
+*/

@@ -1,0 +1,94 @@
+/* This is an external stylesheet. */
+
+/* This is a rule. CSS is comprised
+of rules.
+
+To write a rule: selector, open 
+curly bracket, close curly bracket. 
+
+While this is the correct way to
+write a rule, this is an Empty Rule.
+
+Empty rules should be avoided in
+our stylesheets.
+*/
+p {
+  /* This is a declaration. CSS
+  rules are comprised of 
+  declarations.
+  
+  A declaration is a property/value
+  pair.
+
+  To write a declaration: property,
+  colon (:), space, value,
+  semi-colon (;).
+  */
+  color: orange;
+}
+
+
+/* 
+
+CSS is read from top to bottom.
+
+CSS rules are applied as they are read.
+
+Rules with the same selector and the same
+declarations will have the last declaration
+in the last rule applied.
+
+The last declaration with the same property 
+in the same rule will be applied.
+
+This order of CSS creates precendence.
+
+Precedence in the case of CSS gives 
+the last declaration of same property or
+the last declaration of same property of
+the same selector of the last rule priority.
+
+In other words, priority given to the 
+last declaration read.
+
+
+*/
+h1 {
+  /* 
+    DO NOT DO THIS!!!
+
+    If you have to use !important you
+    are doing something wrong.
+
+   */
+  color: yellow !important;
+}
+
+p {
+  color: aqua;
+  color: goldenrod;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+p {
+  padding-top: 500px;
+}
+
+p {
+  padding-top: 50px;
+  padding-bottom: 300px;
+}
+
+span {
+  font-size: 10px;
+}
+
+/*  */
+* {
+  outline: 1px solid green;
+}
+
+div {
+  height: 500px;
+}

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Space out your code. Line breaks help make code easier to read. */
+#banner{
+    background: url(../img/blm-usa-flag.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+}
+.banner-text p{
+    font-size: 50px;
+    font-style: italic;
+}
+.essay{
+    padding: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgba(4, 13, 139, 0.712);
+    color: white;
+}
+.essay p{
+    padding: 10px;
+}
+.title-text{
+    text-align: center;
+}
+
+/* Just style the <h1> */
+/* .title-text h1 {
+    font-size: 50px;
+    color: white;
+} */
+
+.title-text{
+    font-size: 50px;
+    color: white;
+    background-color: rgba(253, 56, 56, 0.719);
+    padding: 5px 0;
+    margin-bottom: 0.5em;
+}
+
+/* Wrote this rule unecessarily. */
+/* .title-text{ */
+    /* <div>'s are block elements. The default width is already 100%. */
+    /* width: 100%; */
+    /* padding: 5px 0; */
+    /* background-color: rgba(253, 56, 56, 0.719); */
+    /* This isn't necessary. Umm... what were we supposed to be doing? */
+    /* background-size: 0px; */
+/* } */
+
+/* If you have a container, add spacing to the container, not the img. */
+/* .single-blm img {
+    padding: 100px;
+    padding-top: 30px;
+    margin-right: auto;
+    width: 600px;
+} */
+
+/* Set some defaults for your images. */
+
+/* Create a focal point. */
+.x--wide { 
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.image {
+    margin-bottom: 1em;
+}
+
+/* This is an overuse of id's. Use classes for code that's going
+to be the same for more than one element. */
+/* #blm2 img{
+    padding: 100px;
+    padding-top: 30px;
+    margin-left: 600px;
+    margin-top:-120px ;
+    width: 600px;
+}
+#blm3 img{
+    padding: 100px;
+    padding-top: 30px;
+    margin-right: auto;
+    margin-top:-120px;
+    width: 600px;
+} */
+
+.bg{
+    background-color: rgba(4, 13, 139, 0.61);
+    color: white;
+}
+
+   
+/* 
+
+There's nothing technically incorrect about this. You accomplished a result,
+but with way too much code. If you keep having to override code that you have 
+previously written, then you're doing something wrong.
+
+Be sure to check your HTML to see what was affected here in CSS.
+
+Pet peeve, no line breaks. Again, you AND I have to read this. Make it easier 
+for the both of us.
+
+15/15
+
+100%
+
+*/
+
+
+
+
+
+

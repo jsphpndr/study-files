@@ -1,0 +1,219 @@
+/* Global Styles - START */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 
+  We can use CSS to determine the type of
+  font used.
+
+  The default value is serif.
+
+  The alternative option is sans-serif.
+  
+  The font type is set by the user's OS.
+  */
+  font-family: sans-serif
+}
+
+/* Utility Classes — START */
+
+.flex {
+  /* 
+  
+  The display value flex allows to control
+  element positioning in rows and columns.
+  
+  The default flex-direction is row.
+
+  */
+  display: flex;
+}
+
+.flex--middle {
+  display: flex;
+  /* 
+  The align-items property allows us to
+  position flex items vertically.
+  
+  */
+  align-items: center;
+}
+
+.x--wide {
+  /* Width values are generally absolute,
+  with few exceptions. In this instance,
+  1080px is an absolute value. */
+  /* width: 1080px; */
+  /* Unlike the width property, max-width
+  values are relative to the maximum space 
+  available. So, in this instance, our 
+  elements can be less than or as wide as 
+  1080px but no more. */
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.y--height {
+  min-height: 100vh;
+}
+
+.bg--prime {
+  background-color: #1abc9c
+}
+
+/* Utility Classes — END */
+
+/* Global Styles - END */
+
+/* Navbar - START */
+
+.navbar {
+  height: 100px;
+}
+
+.wrapper {
+  height: inherit;
+}
+
+.logo {
+  height: inherit;
+}
+
+.logo img {
+  width: 90px;
+}
+
+.navbar .wrapper {
+  /* In modern usage there is a better property
+  for positioning elements. */
+  /* display: flex; */
+  justify-content: space-between;
+}
+
+/* .navbar__menu { */
+  /* Old solution to position elements. */
+  /* float: right;
+  clear: both; */
+  /* This is another method to allow for
+  the positioning of elements and may require 
+  further coding. */
+  /* display: inline-block; */
+  
+/* } */
+
+.menu {
+  /* display: flex; */
+  list-style: none;
+  color: black;
+  margin-left: 1em;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+  margin-left: 1em;
+  text-transform: uppercase;
+}
+
+/* Navbar - END */
+
+/* Hero — START */
+
+.hero {
+  background-color: black;
+  /* The background-image property allows
+  us to add background to elements. */
+  /* background-image: url('https://images.unsplash.com/photo-1597910037254-7437ee4e68ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80'); */
+  /* The background-repeat property allows 
+  to control whether or not the image is 
+  repeated. */
+  /* background-repeat: no-repeat; */
+  /* The background-postion property, positions
+  the image relative to it's container. */
+  /* background-position: center; */
+  /* Like other properties in CSS, there is
+  also a shorthand for dealing with background
+  colors and images. */
+  /* background: black */
+  background: url('https://images.unsplash.com/photo-1597910037254-7437ee4e68ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80') no-repeat center;
+  /* The background-size property controls 
+  the size of the image relative to it's 
+  container.
+  
+  In the first instance, the contain value
+  tells the browser to fit the image
+  proportionally to it's container.
+  
+  The background-cover property tells the browser
+  to size the image to fill it's container. 
+  The image size may exceed the size of it's
+  container.
+  */
+  background-size: cover;
+  /* 
+  CSS allows to do complicated calculations
+  by using the browser's computing ability.
+
+  Wherein, we may not know the viewport's 
+  height or width, or what pixel a percentage
+  may have, we can rely on the browser to 
+  get these values for us.
+
+  This also allows to calculate values with 
+  different units of measurement, like here 
+  with vh and px.
+   */
+  min-height: calc(100vh - 100px);
+  color: white;
+  
+}
+
+.hero .wrapper {
+  min-height: inherit;
+}
+
+.hero__heading {
+  font-size: 5em;
+}
+
+.hero__subheading {
+  font-size: 1.5em
+}
+
+/* Hero - END */
+
+/* Sections — START */
+
+
+/* Cards — START */
+.cards {
+  list-style: none;
+  flex-flow: row wrap;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc( (1080px / 3) - 60px )
+}
+
+.card {
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 4px 2px 5px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-bottom: 1em;
+}
+
+/* Cards — END */
+
+/* Sections — END */
+
+/* Footer — START */
+/* Footer — END */

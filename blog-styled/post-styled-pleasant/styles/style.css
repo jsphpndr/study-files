@@ -1,0 +1,141 @@
+
+/* GLOBAL STYLE - START */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* UTILITY - START */
+
+.flex {
+    display: flex;
+}
+
+.flex--middle {
+    display: flex;
+    align-items: center;
+}
+
+.x--wide{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.y--height{
+    min-height: 100vh;
+}
+
+.bg--prime {
+    background-color:black;
+}
+
+.bg--sec {
+    background-color:white;
+}
+
+/* UTILITY END */
+
+/* GLOBAL STYLE START */
+
+/* NAVBAR - START */
+
+.navbar{
+    height: 100px;
+}
+
+.peart{
+    height: inherit;
+}
+
+.pe-logo {
+    height: inherit;
+}
+
+.pe-logo img{
+    width: 90px;
+}
+
+.navbar .peart{
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    color: black;
+    margin-left: 1em;
+
+}
+
+.menu__link{
+    text-decoration: none;
+    color: white;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+/* NAVBAR END */
+
+/* HOME START */
+
+/* ACE START */
+
+.ace {
+    background-color: black;
+    background: url("https://images.unsplash.com/photo-1612375411953-f08bb5eb81c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") no-repeat center;
+    background-size: cover;
+    min-height: calc(100vh - 100px);
+    color: white;
+}
+
+/* Just selecting the class would have worked. You would only need to 
+specify like this in certain instances. */
+.ace .peart{
+    min-height: inherit
+}
+
+.ace__heading {
+    font-size: 5em;
+}
+
+.ace__subheading{
+    font-size: 1.5em;
+}
+
+/* ACE - END */
+
+/* HOME START */
+
+.ppart {
+    text-decoration-color: white;
+}
+
+/* SECTIONS END */
+
+/* FOOTER START */
+
+.footer__link{
+    text-decoration: none;
+    color: white;
+}
+/* FOOTER END */
+
+/* 
+
+This is a great attempt, Pleasant.
+
+This looks like it's original to you.
+
+Nicely indented. No errors.
+
+15/15
+
+100%
+
+*/

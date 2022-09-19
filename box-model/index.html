@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Box Model</title>
+  <meta name="description" content="We're going to start learning CSS.">
+  <link rel="canonical" href="https://josephpinder.com">
+
+  <!-- This is an internal style. This should be done SOMETIMES, more often
+    than not, it will not be required. -->
+  <style>
+
+    p {
+      color: green;
+    }
+
+    h1 {
+      color: blue !important;
+    }
+
+    span {
+      font-size: 25px;
+    }
+
+  </style>
+  
+  <link rel="stylesheet" href="/styles/style.css">
+
+  <style>
+
+    span {
+      font-size: 100px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <!-- This is an inline style. DO NOT DO THIS! 
+
+    Inline styles take precedence over all other rules.
+
+    Inline styles are superseded by declarations in internal
+    and external styles with the !important value.
+  -->
+  <h1 style="color: red;">The Box Model — Learning CSS</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, minima voluptas cum praesentium quidem neque libero vel aspernatur, autem harum cupiditate at quaerat tenetur ducimus!
+    <!-- Line breaks should be used in elements where text is written to create
+      line breaks in that text.
+
+      Line breaks should not be used to create spacing between elements. 
+      DO NOT DO THIS! -->
+    <br>
+    <br>
+    <!-- While the <b> element and the <strong> element have the same visual
+        appearance, the <b> element has no semantic and the <strong> element
+        indicates that a particular bit of text is important. -->
+    Lorem, <b>ipsum</b> dolor <strong>sit</strong> amet consectetur adipisicing elit. Dicta obcaecati similique doloremque!
+    <br>
+    <!-- While the <i> element and the <em> element have the same visual
+        appearance, the <i> element has no semantic and the <em> element
+        indicates that a particular bit of text has emphasis. -->
+    Alias, <i>itaque</i> dolor <em>ratione</em> nobis suscipit adipisci tempore voluptate, odit est, sunt libero?
+  </p>
+
+  <!-- 
+    The span element is an inline element.
+
+    This means that it has a default width 
+    and height of auto (0).
+
+    Inline elements get their width and height
+    from their content, whether text, images or 
+    child elements.
+
+    This default behaviour comes from the 
+    User Agent Stylesheet.
+  -->
+  <span>This is a span</span>
+  <!-- 
+    The article element is a block element.
+
+    Block elements have a default width of 
+    100% and default height of auto (0).
+
+    Unlike inline elements, block elements 
+    take up 100% of the viewport regardless 
+    of it's content.
+
+    Block elements get their height from 
+    their content, whether text, images or 
+    child elements.
+
+    These default behaviors create what is 
+    known as The Box Model.
+
+   -->
+  <article></article>
+  <a href="#" style="text-decoration: none;">This is a link</a>
+  
+  <div></div>
+  <div></div>
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+/* global rules <-- I think you wanted this to be a comment. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Elelment styles start */
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+     text-align: center; 
+}
+
+
+li{
+    display: list-item;
+    list-style-type: none;
+}
+
+h3{
+    color:white;
+}
+
+a{
+    text-decoration:inherit;
+}
+
+nav > ul{
+    list-style: none;
+}
+/* Element End */
+
+/*Class Starts   */
+
+.peterriver{
+background-color: #3498db;
+color: white;
+}
+/* Classes */
+
+.peterriver a{
+    color: white;
+}
+
+
+.flex{
+    display: flex;
+    
+}
+
+.flex--between{
+justify-content: space-between;
+ }
+
+.flex--center{
+justify-content: center;
+}
+
+.flex--middle{
+align-items: center;
+max-height: inherit;
+}
+
+
+.flex--wrap{
+    flex-wrap: wrap;
+}
+
+.x--wide{
+    max-width: 2022px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar{
+background-color:#3498db;
+min-height: 80px;
+}
+
+.navbar > .wrapper {
+min-height: inherit;
+}
+.navbar a{
+  color:white;  
+}
+
+.xp--1{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+ .logo{
+    flex: flex middle;
+    justify-content: space-between;
+} 
+
+.logo > img{
+    height: 70px;
+}
+
+.menu__item{
+    margin-left: 1em;
+    padding-left: 1px;
+}
+/* .menu .flex{
+    padding-right: 5px;
+} */
+
+/* Hero Styles */
+.hero{
+min-height: 800px;
+background-image:url(../img/bonefish-bahamas.jpg);
+background-size: cover;
+}
+
+.hero__overlay{
+color:white;
+background-color:rgba(0,0,0,0.3 );
+min-height: inherit;
+flex: flex middle;
+}
+
+.hero__heading{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+.hero__subheading{
+    text-align: center;
+    font-size: 40px;
+}
+
+.hero__content{
+    padding-top: 200px;
+}
+
+.line{
+    background-color: white;
+    height: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/* hero end */
+
+/* section start */
+.section{
+    padding-top: center;
+    padding-bottom: 1em;
+    background-color: #3498db;
+}
+
+.section__heading{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 2em;
+    color: white; 
+}
+
+.section--subheading{
+    text-align: center;
+}
+.col{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
+}
+
